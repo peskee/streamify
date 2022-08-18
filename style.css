@@ -4,6 +4,7 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+/* HEADER  */
 .header {
   min-height: 100vh;
   width: 100%;
@@ -81,31 +82,46 @@ nav img {
   padding: 2%;
   margin-left: 5%;
 }
+
+/* STORE  */
+
+#store {
+  background: #212128;
+}
+#store p {
+  font-size: 50px;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+  padding-top: 5%;
+  text-align: center;
+}
 .store-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #212121;
+  min-height: 60vh;
 }
 .card {
   position: relative;
   width: 320px;
   height: 480px;
-  background: #191919;
+  /* background: #191919; */
   border-radius: 20px;
   overflow: hidden;
   margin: 3%;
   flex-basis: 20%;
 }
-
+.card h3 {
+  text-align: center;
+}
 .card::before {
   content: "";
   position: absolute;
   top: -50%;
   width: 100%;
   height: 100%;
-  background: #ffce00;
+  background: rgb(255, 255, 255);
   transform: skewY(345deg);
   transition: 0.5s;
 }
@@ -172,4 +188,65 @@ nav img {
 .mouse {
   height: 300px;
   width: auto;
+}
+
+/* INDIVIDUAL CARDS */
+#netflix {
+  background: rgb(190, 58, 58);
+}
+
+#spotify {
+  background: rgb(32, 172, 32);
+}
+
+#nordvpn {
+  background: rgb(117, 164, 226);
+}
+
+#canva {
+  background: rgb(12, 167, 167);
+}
+
+#youtube {
+  background: rgb(190, 58, 58);
+}
+
+#xbox {
+  background: rgb(5, 134, 5);
+}
+
+#malwarebytes {
+  background: rgb(137, 147, 233);
+}
+
+#hbomax {
+  background: #491c52;
+}
+
+#grammarly {
+  background: rgb(88, 179, 141);
+}
+
+#expressvpn {
+  background: rgba(172, 64, 64, 0.986);
+}
+
+#duolingo {
+  background: rgb(34, 134, 34);
+}
+
+#disney {
+  background: rgb(77, 77, 161);
+}
+
+#deezer {
+  background: rgb(29, 29, 29);
+}
+
+#crunchyroll {
+  background: rgb(214, 131, 6);
+}
+
+#codecademy {
+  background: rgb(6, 6, 134);
 }
