@@ -183,9 +183,11 @@ nav .fa-solid {
 }
 .store-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /*center*/
   align-items: center;
   min-height: 60vh;
+  flex-direction: row;
+  flex-flow: wrap;
 }
 .card {
   position: relative;
@@ -195,7 +197,6 @@ nav .fa-solid {
   border-radius: 20px;
   overflow: hidden;
   margin: 3%;
-  flex-basis: 20%;
 }
 .card h3 {
   text-align: center;
@@ -273,6 +274,9 @@ nav .fa-solid {
 .mouse {
   height: 300px;
   width: auto;
+}
+
+@media (max-width: 1600px) {
 }
 
 /* INDIVIDUAL CARDS */
