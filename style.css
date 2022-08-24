@@ -26,6 +26,12 @@ nav img {
 nav .fa-solid {
   display: none;
 }
+nav .fa-cart-shopping {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
 .nav-links ul .fa {
   display: none;
 }
@@ -183,7 +189,7 @@ nav .fa-solid {
 }
 .store-row {
   display: flex;
-  justify-content: space-around; /*center*/
+  justify-content: center; /*center*/
   align-items: center;
   min-height: 60vh;
   flex-direction: row;
@@ -341,4 +347,81 @@ nav .fa-solid {
 
 #codecademy {
   background: rgb(6, 6, 134);
+}
+/* WHY US? */
+.why-us {
+  background-color: #3b3b42;
+  min-height: 55em;
+  text-align: center;
+  color: white;
+}
+.why-us h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 1em;
+  color: #fff;
+  font-size: 70px;
+}
+.whyus-row {
+  margin-top: 8em;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.whyus-card {
+  display: inline-block;
+  height: 15em;
+  width: 12em;
+  margin: 2em;
+  background-color: #61616d;
+  padding: 3%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 9px 1px rgba(230, 235, 234, 0.81);
+  -moz-box-shadow: 0px 0px 9px 1px rgba(230, 235, 234, 0.81);
+  box-shadow: 0px 0px 9px 1px rgba(230, 235, 234, 0.81);
+}
+.whyus-card h2{
+  font-size: 45px;
+}
+.whyus-card p {
+  margin-top: 0.8em;
+  font-size: 25px;
+  font-weight: 300;
+}
+.whyus-card .fa-solid {
+  color: #ffce00;
+}
+/* Why us not going 3 1*/
+
+/* SOCIALS */
+.footer {
+  background-color: #212128;
+}
+.footer h1 {
+  text-align: center;
+  color: #fff;
+}
+.footer h3 {
+  color: gray;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.socials {
+  text-align: center;
+}
+.socials .fa-brands {
+  font-size: 25px;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: #fff;
+}
+#copyright {
+  text-align: center;
+  margin-top: 2%;
+  font-weight: 400;
+  opacity: 0.7;
+  color: #fff;
 }
