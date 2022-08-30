@@ -381,20 +381,71 @@ nav .fa-cart-shopping {
   -webkit-box-shadow: 0px 0px 9px 1px rgba(230, 235, 234, 0.81);
   -moz-box-shadow: 0px 0px 9px 1px rgba(230, 235, 234, 0.81);
   box-shadow: 0px 0px 9px 1px rgba(230, 235, 234, 0.81);
+  perspective: 1000px;
+}
+.whyus-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.whyus-card:hover .whyus-card-inner {
+  transform: rotateY(180deg);
+}
+.whyus-card-front, .whyus-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.whyus-card-front {
+  color: white;
+}
+.whyus-card-back {
+  color: white;
+  transform: rotateY(180deg);
 }
 .whyus-card h2 {
+  position: relative;
+  margin-top: 40%;
   font-size: 40px;
 }
 .whyus-card p {
-  margin-top: 0.8em;
-  font-size: 22px;
-  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 1%;
 }
 .whyus-card .fa-solid {
   color: #ffce00;
+  font-size: 100px;
 }
-/* Why us not going 3 1*/
+.rotate{
+  color: green;
+  font-size: 100px;
+}
+@media screen and (max-width:954px){
+  .whyus-card h2{
+    margin-top: 30%;
+  }
+  .whyus-card p{
+    margin-top: 4%;
+  }
+}
 
+@media screen and (max-width:599px){
+  .whyus-card h2{
+    margin-top: 24%;
+  }
+  .whyus-card p{
+    margin-top: 8%;
+  }
+}
 /* SOCIALS */
 .footer {
   background-color: #212128;
