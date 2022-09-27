@@ -596,3 +596,24 @@ nav .fa-cart-shopping {
   text-decoration: none;
   margin-top: 4%;
 }
+
+@media screen and (max-width: 690px) {
+  .quantity {
+    width: 20%;
+  }
+  .products-container {
+    font-size: 12px;
+  }
+  .products img {
+    display: none;
+  }
+  .products-container .fa-solid {
+    font-size: 20px;
+  }
+  .basketTotalTitle {
+    width: 20%;
+  }
+  .basketTotal {
+    width: 30%;
+  }
+}
